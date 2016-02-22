@@ -152,8 +152,8 @@
 				<!-- Banner content -->
 				<div class="rst-banner-content">
 					<div class="container">
-						<div class="row banner-text">
-							<div class="col-sm-6">
+						<div class="row banner-text ">
+							<div class="col-sm-6 deferload"  style="display: none;">
 								<div class="text-left">
 									<h1>Hire <br/>2x Faster & Smarter</h1>
 									<h5>through QuezX's consultant marketplace platform</h5>
@@ -171,18 +171,10 @@
 			</div>
 			<!-- Header banner -->
 			
-			<div class="rst-scroll-down text-center">
-				<a href="#about"><i class="fa fa-arrow-down"></i></a>
+			<div class="rst-scroll-down text-center deferload" style="display:none">
+				<a href="#about" id="hidevline"><i class="fa fa-arrow-down" style="margin-bottom: 170px;"></i></a>
 			</div>
-			
-		</header>
 
-
-		<!-- Header -->
-		
-		<!-- Main page -->
-		<section>
-			
 			<div id="rst-numbers" class="rst-numbers">
 				<div class="container">
 					<div class="rst-funfact">
@@ -211,6 +203,19 @@
 						</div>
 				</div>
 			</div>
+
+
+			
+		</header>
+
+
+
+		<!-- Header -->
+		
+		<!-- Main page -->
+		<section>
+			
+			
 
 			<!-- What we have -->
 			<div id="rst-home-whatwehave" class="wpb_row">
@@ -264,7 +269,7 @@
 							                        <span class="img-border"><img src="images/icon/recruitement-management-system.png" alt="#" /></span>
 							                        <div class="feature-text">
 							                            <h6 class="uppercase letterspace2x">Recruitment Management System</h6>
-							                            <p>No more email and excel trackers. Manage your hiring through our intuitive ATS and communication platform</p>
+							                            <p>No more email and Excel trackers. Manage your hiring through our intuitive ATS and communication platform</p>
 							                        </div>
 							                    </div>
 							                </div>
@@ -303,28 +308,28 @@
 								<i class="fa fa-pencil-square-o"></i>
 							</div>
 							<h5 style="color:#FFFFFF">POST</h5>
-							<p style="color:#FFFFFF">Effortlessly upload your job description and leave the rest to us.</p>
+							<p style="color:#FFFFFF">Effortlessly upload your job description and leave the rest to us</p>
 						</div>
 						<div class="rst-home-whatwehave text-center mrgb8x">
 							<div class="rst-borderdashed">
 								<i class="fa fa-filter"></i>
 							</div>
 							<h5 style="color:#FFFFFF">SCREEN</h5>
-							<p style="color:#FFFFFF">Our scoring algorithms & screening team ensures most relevant profiles.</p>
+							<p style="color:#FFFFFF">Our scoring algorithms & screening team ensures most relevant profiles</p>
 						</div>
 						<div class="rst-home-whatwehave text-center wow animated slideInRight mrgb8x">
 							<div class="rst-borderdashed ">
 								<i class="fa fa-check-square-o"></i>
 							</div>
 							<h5 style="color:#FFFFFF">SHORTLIST</h5>
-							<p style="color:#FFFFFF">Save time and efforts through our one stop recruitment management tool.</p>
+							<p style="color:#FFFFFF">Save time and efforts through our one stop recruitment management tool</p>
 						</div>
 						<div class="rst-home-whatwehave text-center wow animated slideInRight mrgb8x">
 							<div class="rst-borderdashed">
 								<i class="fa fa-thumbs-o-up"></i>
 							</div>
 							<h5 style="color:#FFFFFF">HIRE</h5>
-							<p style="color:#FFFFFF">Make an offer to only the best candidates.</p>
+							<p style="color:#FFFFFF">Make an offer to only the best candidates</p>
 						</div>
 				</div>
 				<div class="rst-scroll-down text-center">
@@ -444,7 +449,7 @@
 					<div class="row">
 						<div class="col-sm-3">
 							<div class="rst-copyright">
-								<p>© QuezX 2016. All Right Reserved.</p>
+								<p>Powered by QuezX 2016.</p>
 							</div>
 						</div>
 						<div class="col-sm-6">
@@ -519,6 +524,20 @@
                                 }, 500);
         return false;
         });
+
+       $(function() {
+    console.log( "Welcome to QuezX.com" );
+    setTimeout(function(){
+ // alert("Boom!");
+  $(".deferload").css("display","block");
+}, 350);
+   
+        
+
+
+
+
+		});
     </script>
 
   </body>

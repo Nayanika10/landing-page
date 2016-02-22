@@ -4255,3 +4255,7 @@ cite {
     border: 0;
   }
 }
+
+#hidevline::after{
+  background: none;
+}
