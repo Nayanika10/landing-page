@@ -13,7 +13,7 @@
     
     <!-- Favicons
     ================================================== -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="img/apple-touch-icon.html">
     <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.html">
     <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.html">
@@ -76,46 +76,6 @@
 		<!-- Header -->
 		<header id="rst-header" class="wpb_row">
 		
-		
-			<!-- <nav class="rst-line-reg">
-				<div class="container">
-					<div class="rst-line-reg-social">
-						<ul>
-							<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fa fa-behance"></i></a></li>
-						</ul>
-					</div>
-					<div class="rst-line-reg-setting">
-						
-						
-						
-						
-						<div class="rst-login">
-							<a href="#">Sign in<i class="fa fa-angle-down"></i></a>
-							<form action="https://themeforces.com/demo/skeets-html/shortcodes.html">
-								<input type="email" name="login-email" id="login-email" class="text required email" placeholder="Email" />
-								<input type="password" name="login-password" id="login-password" class="text required" placeholder="Password" />
-								<input type="submit" value="sign in"/>
-								<p>Not have an Account? <a href="#">Sign Up</a></p>
-							</form>
-						</div>
-				
-						
-						<div class="rst-languages">
-							<a href="#">English<i class="fa fa-angle-down"></i></a>
-							<ul>
-								<li><a href="#">English</a></li>
-								<li><a href="#">Frances</a></li>
-							</ul>
-						</div>
-						<div class="clear"></div>
-					</div>
-					<div class="clear"></div>
-				</div>
-			</nav> -->
-		
 			
 			<!-- Header banner -->
 			<div class="rst-header-banner rst-banner-background rst-banner-3 rst-index-page-banner">
@@ -127,11 +87,8 @@
 								<span>Toggle navigation</span>
 							</button>
 						<div class="rst-header-logo">
-							<a href="index.html"><img src="images/header-logo-1.png" alt="" /></a>
-							
+							<a href="index.html"><img src="images/header-logo-1.png" alt="" /></a>						
 							<a class="rst-logo-sticky" href="index.html"><img style="width: 142px; height: 45px;" src="images/header-logo-2.png" alt="" /></a>
-
-
 						</div>
 						<nav class="rst-header-menu">
 							
@@ -140,9 +97,50 @@
 								<li><a href="#rst-support-products">HOW IT WORKS</a></li>
 								<li><a href="#rst-wearetruster">CLIENTS</a></li>
 							</ul>
-							
-							<a class="rst-header-livechat hidden-xs" href="https://app.quezx.com/signUps/Newclient" target="_blank">SCHEDULE A DEMO</a>
-							<a class="rst-header-livechat hidden-xs" href="https://app.quezx.com">LOGIN</a>
+				
+								<button class="rst-header-livechat hidden-xs btn btn-primary" data-toggle="modal" data-target="#clientModal">SCHEDULE A DEMO</button>
+
+								
+								<!-- Modal -->
+								<div class="modal fade" id="clientModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								  <div class="modal-dialog">
+								    <div class="modal-content">
+								      
+								      <div class="modal-body">
+								          <iframe src="https://app.quezx.com/signUps/Newclient" width="800" height="600" frameborder="0" allowtransparency="true"></iframe>  
+								      </div>
+								      <div class="modal-footer">
+
+								      </div>
+								    </div>
+								    <!-- /.modal-content -->
+								  </div>
+								  <!-- /.modal-dialog -->
+								</div>
+								<!-- /.modal -->
+
+
+								<!-- Modal -->
+								<div class="modal fade" id="consultantModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								  <div class="modal-dialog">
+								    <div class="modal-content">
+								      
+								      <div class="modal-body">
+								          <iframe src="https://app.quezx.com/signUps/newuser" width="800" height="600" frameborder="0" allowtransparency="true"></iframe>  
+								      </div>
+								      <div class="modal-footer">
+								       <!--  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								        <button type="button" class="btn btn-primary">Save changes</button> -->
+								      </div>
+								    </div>
+								    <!-- /.modal-content -->
+								  </div>
+								  <!-- /.modal-dialog -->
+								</div>
+								<!-- /.modal -->
+
+
+							<a class="rst-header-livechat hidden-xs btn btn-primary" href="https://app.quezx.com">LOGIN</a>
 						</nav>
 						<div class="clear"></div>
 					</div>
@@ -158,8 +156,14 @@
 									<h1>Hire <br/>2x Faster & Smarter</h1>
 									<h5>through QuezX's consultant marketplace platform</h5>
 									<div class="demo-btn">
-										<a style="padding: 12px; margin-right:20px" class="btn btn-success hidden-xs" href="https://app.quezx.com/signUps/Newclient" target="_blank">I WANT TO HIRE</a>
-										<a style="padding: 12px;" class="btn btn-success hidden-xs" href="https://app.quezx.com/signUps/newuser" target="_blank">I WANT TO SOURCE</a>
+
+										<button style="padding: 12px; margin-right:20px" class="rst-header-livechat hidden-xs btn btn-success" data-toggle="modal" data-target="#clientModal">I WANT TO HIRE</button>
+
+										<button style="padding: 12px; margin-right:20px" class="rst-header-livechat hidden-xs btn btn-success" data-toggle="modal" data-target="#consultantModal">I WANT TO SOURCE</button>
+
+
+										<!-- <a style="padding: 12px; margin-right:20px" class="btn btn-success hidden-xs" href="https://app.quezx.com/signUps/Newclient" target="_blank">I WANT TO HIRE</a>
+										<a style="padding: 12px;" class="btn btn-success hidden-xs" href="https://app.quezx.com/signUps/newuser" target="_blank">I WANT TO SOURCE</a> -->
 									</div>
 								</div>
 							</div>
@@ -170,10 +174,6 @@
 				
 			</div>
 			<!-- Header banner -->
-			
-			<div class="rst-scroll-down text-center deferload" style="visibility:hidden">
-				<a href="#about" id="hidevline"><i class="fa fa-arrow-down" style="margin-bottom: 170px;"></i></a>
-			</div>
 
 			<div id="rst-numbers" class="rst-numbers">
 				<div class="container">
@@ -202,97 +202,87 @@
 							
 						</div>
 				</div>
-			</div>
-
-
-			
+			</div>		
 		</header>
-
-
 
 		<!-- Header -->
 		
 		<!-- Main page -->
 		<section>
 			
-			
-
-			<!-- What we have -->
+		<!-- What we have -->
 			<div id="rst-home-whatwehave" class="wpb_row">
 				<div class="container">
-					<div id="about" class="rst-group-title text-center">
-						
-						<h3>Why QuezX?</h3>
+					<div id="about" class="rst-group-title text-center">					
+					<h3>Why QuezX?</h3>
 					</div>
-								<div>
-
-							        <div class="feature-content">
-							            <div class="row">
-							                <div class="col-md-6 col-sm-6">
-							                    <div class="feature-box mrgb4x">
-							                        <span class="img-border"><img src="images/icon/2x-faster.png" alt="#" /></span>
-							                        <div class="feature-text">
-							                            <h6 class="uppercase letterspace2x">Hire 2x faster</h6>
-							                            <p>Access to 1000s of consultancies pan India reducing TAT</p>
-							                        </div>
-							                    </div>
-							                </div>
-							                 <div class="col-md-6 col-sm-6">
-							                    <div class="feature-box mrgb4x">
-							                        <span class="img-border"><img src="images/icon/2x-smarter.png" alt="#" /></span>
-							                        <div class="feature-text">
-							                            <h6 class="uppercase letterspace2x">Hire 2x smarter</h6>
-							                            <p>Recruiter selection based on industry / function specialisation & past performance ensuring highest quality</p>
-							                        </div>
-							                    </div>
-							                </div>
-							                 <div class="col-md-6 col-sm-6">
-							                    <div class="feature-box mrgb4x">
-							                        <span class="img-border"><img src="images/icon/algorithmic-screening.png" alt="#" /></span>
-							                        <div class="feature-text">
-							                            <h6 class="uppercase letterspace2x">Algorithmic Screening</h6>
-							                            <p>Our proprietary algorithms scores candidates based on the skills required by you</p>
-							                        </div>
-							                    </div>
-							                </div>
-							                 <div class="col-md-6 col-sm-6">
-							                    <div class="feature-box mrgb4x">
-							                        <span class="img-border"><img src="images/icon/single-agreement.png" alt="#" /></span>
-							                        <div class="feature-text">
-							                            <h6 class="uppercase letterspace2x">Single Agreement, Multiple Consultancies</h6>
-							                            <p>Work with multiple agencies with a single agreement and a centralised billing system</p>
-							                        </div>
-							                    </div>
-							                </div>
-							                 <div class="col-md-6 col-sm-6">
-							                    <div class="feature-box mrgb4x">
-							                        <span class="img-border"><img src="images/icon/recruitement-management-system.png" alt="#" /></span>
-							                        <div class="feature-text">
-							                            <h6 class="uppercase letterspace2x">Recruitment Management System</h6>
-							                            <p>No more email and Excel trackers. Manage your hiring through our intuitive ATS and communication platform</p>
-							                        </div>
-							                    </div>
-							                </div>
-							                 <div class="col-md-6 col-sm-6">
-							                    <div class="feature-box mrgb4x">
-							                        <span class="img-border"><img src="images/icon/offline-support.png" alt="#" /></span>
-							                        <div class="feature-text">
-							                            <h6 class="uppercase letterspace2x">Offline Support</h6>
-							                            <p>A dedicated accounts manager to help you with just about everything</p>
-							                        </div>
-							                    </div>
-							                </div>
+					<div>
+						<div class="feature-content">
+				            <div class="row">
+				                <div class="col-md-6 col-sm-6">
+				                    <div class="feature-box mrgb4x">
+				                        <span class="img-border"><img src="images/icon/2x-faster.png" alt="#" /></span>
+				                        <div class="feature-text">
+				                            <h6 class="uppercase letterspace2x">Hire 2x faster</h6>
+				                            <p>Access to 1000s of consultancies pan India reducing TAT</p>
+				                        </div>
+				                    </div>
+				                </div>
+				                 <div class="col-md-6 col-sm-6">
+				                    <div class="feature-box mrgb4x">
+				                        <span class="img-border"><img src="images/icon/2x-smarter.png" alt="#" /></span>
+				                        <div class="feature-text">
+				                            <h6 class="uppercase letterspace2x">Hire 2x smarter</h6>
+				                            <p>Recruiter selection based on industry / function specialisation & past performance ensuring highest quality</p>
+				                        </div>
+				                    </div>
+				                </div>
+				                 <div class="col-md-6 col-sm-6">
+				                    <div class="feature-box mrgb4x">
+				                        <span class="img-border"><img src="images/icon/algorithmic-screening.png" alt="#" /></span>
+				                        <div class="feature-text">
+				                            <h6 class="uppercase letterspace2x">Algorithmic Screening</h6>
+				                            <p>Our proprietary algorithms scores candidates based on the skills required by you</p>
+				                        </div>
+				                    </div>
+				                </div>
+				                 <div class="col-md-6 col-sm-6">
+				                    <div class="feature-box mrgb4x">
+				                        <span class="img-border"><img src="images/icon/single-agreement.png" alt="#" /></span>
+				                        <div class="feature-text">
+				                            <h6 class="uppercase letterspace2x">Single Agreement, Multiple Consultancies</h6>
+				                            <p>Work with multiple agencies with a single agreement and a centralised billing system</p>
+				                        </div>
+				                    </div>
+				                </div>
+				                 <div class="col-md-6 col-sm-6">
+				                    <div class="feature-box mrgb4x">
+				                        <span class="img-border"><img src="images/icon/recruitement-management-system.png" alt="#" /></span>
+				                        <div class="feature-text">
+				                            <h6 class="uppercase letterspace2x">Recruitment Management System</h6>
+				                            <p>No more email and Excel trackers. Manage your hiring through our intuitive ATS and communication platform</p>
+				                        </div>
+				                    </div>
+				                </div>
+				                 <div class="col-md-6 col-sm-6">
+				                    <div class="feature-box mrgb4x">
+				                        <span class="img-border"><img src="images/icon/offline-support.png" alt="#" /></span>
+				                        <div class="feature-text">
+				                            <h6 class="uppercase letterspace2x">Offline Support</h6>
+				                            <p>A dedicated accounts manager to help you with just about everything</p>
+				                        </div>
+				                    </div>
+				                </div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="rst-scroll-down text-center">
-						<a href="#rst-support-products"><i class="fa fa-arrow-down"></i></a>
+					<a href="#rst-support-products">
+						<i class="fa fa-arrow-down"></i>
+					</a>
+				</div>
 			</div>
-			</div>
-					
-
-
 						
 			<!-- What we have -->
 			
@@ -336,10 +326,7 @@
 					<a href="#rst-wearetruster"><i class="fa fa-arrow-down"></i></a>
 				</div>
 			</div>
-
 		
-
-			
 			<div id="rst-wearetruster" class="wpb_row rst-partners-group">
 				<div class="container">
 					<div class="rst-group-title text-center">						
@@ -365,10 +352,6 @@
 					<a href="#rst-home-whatpeoplesay"><i class="fa fa-arrow-down"></i></a>
 				</div>
 			</div>
-		
-
-
-
 
 			<!-- What people say -->
 			<div id="rst-home-whatpeoplesay" class="wpb_row">
@@ -409,39 +392,14 @@
 						
 					</div>
 				</div>
-				<!-- <div class="rst-scroll-down text-center">
-					<a href="#rst-home-whatabout"><i class="fa fa-arrow-down"></i></a>
-				</div> -->
+
 			</div>			
-					
-			<!-- Social bar -->
-			<!-- <div class="rst-socials-bar">
-				<div class="rst-social-item">
-					<a href="#"><i class="fa fa-facebook"></i></a>	
-				</div>
-				<div class="rst-social-item">
-					<a href="#"><i class="fa fa-twitter"></i></a>	
-				</div>
-				<div class="rst-social-item">
-					<a href="#"><i class="fa fa-dribbble"></i></a>	
-				</div>
-				<div class="rst-social-item">
-					<a href="#"><i class="fa fa-instagram"></i></a>	
-				</div>
-				<div class="rst-social-item">
-					<a href="#"><i class="fa fa-behance"></i></a>	
-				</div>
-				<div class="clear"></div>
-			</div> -->
-			<!-- Social bar -->
 			
 		</section>
 		<!-- Main page -->
 		
 		<!-- Footer -->
 		<footer id="rst-footer">
-		
-			
 			
 			<!-- Footer copyright bar -->
 			<div class="rst-footer-bar">
@@ -449,7 +407,7 @@
 					<div class="row">
 						<div class="col-sm-3">
 							<div class="rst-copyright">
-								<p>Powered by QuezX 2016.</p>
+								<p>Powered by QuezX 2016</p>
 							</div>
 						</div>
 						<div class="col-sm-6">
@@ -495,9 +453,6 @@
 	<!-- Validation Js -->
     <script type="text/javascript" src="js/jquery.validate.js"></script>
 	
-	<!-- Custom Google Maps js -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgGyzOzpWh_mTpdx-UPt92W6GI8hE7P3M"></script>
-	
 	<!-- Custom scroll bar js -->
 	<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>	
 	
@@ -516,7 +471,6 @@
 	
     <script type="text/javascript" src="js/main.js"></script>
 
-
     <script>
         $('a').click(function(){
         $('html, body').animate({
@@ -526,18 +480,13 @@
         });
 
        $(function() {
-    console.log( "Welcome to QuezX.com" );
-    setTimeout(function(){
- // alert("Boom!");
-  $(".deferload").css("visibility","visible").fadeIn("slow");
-}, 1000);
-   
-        
 
+						setTimeout(function(){
+						$(".deferload").css("visibility","visible").fadeIn("slow");
+							
+						}, 1000); 
 
-
-
-		});
+					});
     </script>
 
   </body>
