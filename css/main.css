@@ -3023,7 +3023,7 @@ cite {
   left: 50%;
   opacity: 0.5;
   position: absolute;
-  width: 1px;
+  width: 0px;
 }
 
 #rst-header .rst-scroll-down a::after {
@@ -3816,7 +3816,7 @@ cite {
   content: "";
   height: 1px;
   position: absolute;
-  right: -125px;
+  right: -135px;
   top: 50%;
   width: 125px;
   z-index: 2;
@@ -3825,7 +3825,7 @@ cite {
 .rst-borderdashed::before {
   background: url("../images/icon/dashed-line.jpg");
   content: "";
-  height: 1px;
+  height: 0px;
   position: absolute;
   left: -125px;
   top: 50%;
